@@ -23,13 +23,11 @@ def update_module_publish_status(
         'Authorization': f'Bearer {access_token}',
         'Content-Type': 'application/json'
     }
-    
-   
 
     payload = {
         'module': {
             'name': module_name,
-            'unlock_at': unlock_date,
+            'unlock_at': unlock_date.isoformat(),
             'published': True
         }
     }
@@ -50,10 +48,11 @@ def update_module_publish_status(
 
 def create_canvas_module(
     course_id, 
-    module_name, 
     access_token, 
-    unlock_date,
-    canvas_domain_url
+    canvas_domain_url, 
+    module_name, 
+    unlock_date
+
 ):
     """
     Create a new module in a Canvas course
@@ -66,7 +65,7 @@ def create_canvas_module(
     :return: Response from the Canvas API
     """
     # Canvas API base URL
-    base_url = f"https://{canvas_domain_url}/api/v1/courses/{course_id}/modules"
+    base_url = f"https://{canvas_domain_url}/{course_id}/modules"
     
     # Headers for the API request
     headers = {
@@ -92,12 +91,10 @@ def create_canvas_module(
         
         module_id = data["id"]
         
-        updateresults = update_module_publish_status(module_name,module_id,course_id,access_token,unlock_date)
+        updateresults = update_module_publish_status(module_name,module_id,canvas_domain_url,course_id,access_token,unlock_date)
 
         # Return the JSON response
         return data
-    
-        
     
     except requests.exceptions.RequestException as e:
         print(f"Error creating module {module_name}: {e}")
@@ -105,9 +102,9 @@ def create_canvas_module(
 
 def create_multiple_modules(
     course_id, 
-    module_names, 
-    access_token,
-    unlock_date
+    access_token, 
+    canvas_domain_url,
+    module_names
 ):
     """
     Create multiple modules in a Canvas course
@@ -124,12 +121,14 @@ def create_multiple_modules(
 
     for i, module_name in enumerate(module_names):
         # Determine unlock date (use None if not provided)
-        
+        module_name['unlock_date'] = datetime.fromisoformat(module_name['unlock_date'])
+
         result = create_canvas_module(
             course_id, 
-            module_name, 
-            access_token,
-            unlock_date 
+            access_token, 
+            canvas_domain_url,
+            module_name['name'],
+            module_name['unlock_date']
         )
         
         if result:

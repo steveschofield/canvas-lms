@@ -4,40 +4,49 @@ from canvas_assignment_creator import create_canvas_assignment
 from canvas_discussion_topic_creator import create_canvas_discussion_topic
 from canvas_page_creator import create_canvas_page
 import configparser
+import json
 
 # Configuration variables
 # Create a config parser object
 config = configparser.ConfigParser()
 
 # Read the configuration file
-config.read('config.ini')
+config.read('~/etc/config.ini')
 
 # Retrieve settings
 COURSE_ID = config['canvas_data']['COURSE_ID']
-API_TOKEN = config['canvas_data'],['API_TOKEN']
+API_TOKEN = config['canvas_data']['API_TOKEN']
 CANVAS_DOMAIN_URL = config['canvas_data']['CANVAS_DOMAIN_URL']
-
 
 def main():
     #Prepare module payload
-    specific_date = datetime.now()
-    future_date = specific_date + timedelta(days=30)
-    
+    # specific_date = datetime.now()
+    # future_date = specific_date + timedelta(days=30)
+    # print(future_date)
     # Serialize the datetime to ISO 8601 format
-    unlock_at_iso = future_date.isoformat()
+    #unlock_at_iso = future_date.isoformat()
     # List of module names to create
-    # MODULE_NAMES = [
-    #     "Module 1",
-    #     "Module 2"
-    # ]
 
-    # # Create modules
-    # created_modules = create_multiple_modules(
-    #     COURSE_ID, 
-    #     MODULE_NAMES, 
-    #     API_TOKEN,
-    #     unlock_at_iso
-    # )
+    def read_modules_from_json(file_path):
+        """
+        Reads module names from a JSON file.
+
+        :param file_path: Path to the JSON file
+        :return: List of module names
+        """
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+        return data['MODULE_NAMES']
+    
+    MODULE_NAMES = read_modules_from_json("datafiles/module-data.json")
+
+    # Create modules
+    created_modules = create_multiple_modules(
+        COURSE_ID,
+        API_TOKEN,
+        CANVAS_DOMAIN_URL,
+        MODULE_NAMES
+    )
 
     # created_assignments = create_canvas_assignment(
     #     COURSE_ID, 
