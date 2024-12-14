@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 from canvas_module_creator import create_multiple_modules
-from canvas_assignment_creator import create_canvas_assignment
+from canvas_assignment_creator import create_multiple_assignments
 from canvas_discussion_topic_creator import create_canvas_discussion_topic
 from canvas_page_creator import create_canvas_page
 import configparser
@@ -11,7 +11,7 @@ import json
 config = configparser.ConfigParser()
 
 # Read the configuration file
-config.read('~/etc/config.ini')
+config.read('/etc/config.ini')
 
 # Retrieve settings
 COURSE_ID = config['canvas_data']['COURSE_ID']
@@ -27,7 +27,7 @@ def main():
     #unlock_at_iso = future_date.isoformat()
     # List of module names to create
 
-    def read_modules_from_json(file_path):
+    def read_from_json(file_path, dataType):
         """
         Reads module names from a JSON file.
 
@@ -36,29 +36,25 @@ def main():
         """
         with open(file_path, 'r') as file:
             data = json.load(file)
-        return data['MODULE_NAMES']
+        return data[dataType]
     
-    MODULE_NAMES = read_modules_from_json("datafiles/module-data.json")
+    #MODULE_NAMES = read_from_json("datafiles/module-data.json","MODULES")
+    ASSIGNMENTS = read_from_json("datafiles/assignment-data.json","ASSIGNMENTS")
 
     # Create modules
-    created_modules = create_multiple_modules(
-        COURSE_ID,
-        API_TOKEN,
-        CANVAS_DOMAIN_URL,
-        MODULE_NAMES
-    )
-
-    # created_assignments = create_canvas_assignment(
-    #     COURSE_ID, 
-    #     API_TOKEN, 
-    #     assignment_name="Sample Assignment 1",
-    #     points_possible="5",
-    #     due_date=unlock_at_iso,
-    #     lock_at=unlock_at_iso,
-    #     unlock_at=unlock_at_iso,
-    #     description="Example Description",
-    #     published=True
+    # created_modules = create_multiple_modules(
+    #     COURSE_ID,
+    #     API_TOKEN,
+    #     CANVAS_DOMAIN_URL,
+    #     MODULE_NAMES
     # )
+
+    created_assignments = create_multiple_assignments(
+        COURSE_ID, 
+        API_TOKEN, 
+        CANVAS_DOMAIN_URL,
+        ASSIGNMENTS,
+    )
 
     # created_discussion_topic = create_canvas_discussion_topic(
     #     COURSE_ID, 
