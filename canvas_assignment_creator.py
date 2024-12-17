@@ -15,15 +15,7 @@ def create_canvas_assignment(
     description,
     published
 ):
-    """
-    Create a new module in a Canvas course
-    :param course_id: The ID of the course
-    :param module_name: Name of the module to create
-    :param access_token: Canvas API access token
-    :param unlock_at: Optional date when the module will become available
-    :param publish: Whether to publish the module immediately
-    :return: Response from the Canvas API
-    """
+
     # Canvas API base URL
     base_url = f"https://{canvas_domain_url}/{course_id}/assignments"
     
@@ -71,15 +63,6 @@ def create_multiple_assignments(
     canvas_domain_url,
     assignments
 ):
-    """
-    Create multiple assignments in a Canvas course
-    
-    :param course_id: The ID of the course
-    :param assignments: List of dictionaries containing assignment data
-    :param access_token: Canvas API access token
-    :param canvas_domain_url: Base URL for Canvas API
-    :return: List of successfully created assignments
-    """
 
     created_assignments = []
 

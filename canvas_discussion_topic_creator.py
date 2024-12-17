@@ -8,44 +8,9 @@ def create_canvas_discussion_topic(
     title,
     message,
     lock_at,
-    published
+    published,
+    pinned
 ):
-    """
-    Create a new module in a Canvas course
-    
-    :param course_id: The ID of the course
-    :param module_name: Name of the module to create
-    :param access_token: Canvas API access token
-    :param unlock_at: Optional date when the module will become available
-    :param publish: Whether to publish the module immediately
-    :return: Response from the Canvas API
-
-        "title":"topic2",
-        "message":"<p>topic2</p>",
-        "podcastEnabled":false,
-        "discussionType":"threaded",
-        "podcastHasStudentPosts":false,
-        "published":true,
-        "isAnnouncement":false,
-        "delayedPostAt":null,"
-        lockAt":null,
-        "assignment":null,
-        "checkpoints":[],
-        "groupCategoryId":null,
-        "locked":false,"
-        requireInitialPost":false,
-        "todoDate":null,
-        "allowRating":false,
-        "onlyGradersCanRate":false,
-        "dueAt":null,
-        "onlyVisibleToOverrides":false,
-        "ungradedDiscussionOverrides":null,
-        "contextId":"14022",
-        "contextType":
-        "Course",
-        "isAnonymousAuthor":false,
-        "anonymousState":"off"},
-    """
     # Canvas API base URL
     base_url = f"https://{canvas_domain_url}/{course_id}/discussion_topics"
     
@@ -57,15 +22,13 @@ def create_canvas_discussion_topic(
     
     # Prepare module payload
     payload = {
-        'discussion_topics': {
-            'title': title,
-            'message': message,
-            'discussion_type':"threaded",
-            'published':published,
-            'lock_at': lock_at.isoformat(),
-            "is_announcement":"false"
 
-        }
+        'title': title,
+        'message': message,
+        'discussion_type':"threaded",
+        'lock_at': lock_at.isoformat(),
+        'published':published,
+        'pinned':pinned
     }
     
     try:
@@ -90,15 +53,6 @@ def create_multiple_discussion_topics(
     canvas_domain_url,
     dicussion_topics
 ):
-    """
-    Create multiple assignments in a Canvas course
-    
-    :param course_id: The ID of the course
-    :param assignments: List of dictionaries containing assignment data
-    :param access_token: Canvas API access token
-    :param canvas_domain_url: Base URL for Canvas API
-    :return: List of successfully created assignments
-    """
 
     created_discussion_topics = []
 
@@ -113,7 +67,8 @@ def create_multiple_discussion_topics(
             dicussion_topic['title'],
             dicussion_topic['message'], 
             dicussion_topic['lock_at'],
-            dicussion_topic['published']
+            dicussion_topic['published'],
+            dicussion_topic['pinned']
         )
         
         if result:

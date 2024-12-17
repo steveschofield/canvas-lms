@@ -11,7 +11,7 @@ import json
 config = configparser.ConfigParser()
 
 # Read the configuration file
-config.read('/etc/config.ini')
+config.read('/Users/ss/etc/config.ini')
 
 # Retrieve settings
 COURSE_ID = config['canvas_data']['COURSE_ID']
@@ -33,8 +33,8 @@ def main():
     
     #MODULE_NAMES = read_from_json("datafiles/module-data.json","MODULES")
     #ASSIGNMENTS = read_from_json("datafiles/assignment-data.json","ASSIGNMENTS")
-    PAGES = read_from_json("datafiles/pages-data.json","PAGES")
-    #DICUSSION_TOPICS = read_from_json("datafiles/discussion-topic-data.json","DISCUSSION_TOPICS")
+    #PAGES = read_from_json("datafiles/pages-data.json","PAGES")
+    DICUSSION_TOPICS = read_from_json("datafiles/discussion-topic-data.json","DISCUSSION_TOPICS")
 
     # Create modules
     # created_modules = create_multiple_modules(
@@ -51,19 +51,19 @@ def main():
     #     ASSIGNMENTS,
     # )
 
-    created_canvas_page = create_multiple_pages(
-        COURSE_ID, 
-        API_TOKEN, 
-        CANVAS_DOMAIN_URL,
-        PAGES
-    )
-
-    # created_discussion_topic = create_multiple_discussion_topics(
+    # created_canvas_page = create_multiple_pages(
     #     COURSE_ID, 
-    #     API_TOKEN,
+    #     API_TOKEN, 
     #     CANVAS_DOMAIN_URL,
-    #     DISCUSSION_TOPICS
+    #     PAGES
     # )
+
+    created_discussion_topic = create_multiple_discussion_topics(
+        COURSE_ID, 
+        API_TOKEN,
+        CANVAS_DOMAIN_URL,
+        DICUSSION_TOPICS
+    )
 
     
 if __name__ == "__main__":

@@ -54,16 +54,7 @@ def create_canvas_module(
     unlock_date
 
 ):
-    """
-    Create a new module in a Canvas course
-    
-    :param course_id: The ID of the course
-    :param module_name: Name of the module to create
-    :param access_token: Canvas API access token
-    :param unlock_at: Optional date when the module will become available
-    :param publish: Whether to publish the module immediately
-    :return: Response from the Canvas API
-    """
+
     # Canvas API base URL
     base_url = f"https://{canvas_domain_url}/{course_id}/modules"
     
