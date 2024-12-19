@@ -97,17 +97,6 @@ def create_multiple_modules(
     canvas_domain_url,
     module_names
 ):
-    """
-    Create multiple modules in a Canvas course
-    
-    :param course_id: The ID of the course
-    :param module_names: List of module names to create
-    :param access_token: Canvas API access token
-    :param unlock_dates: Optional list of unlock dates (must match length of module_names)
-    :param publish: Whether to publish modules immediately
-    :return: List of successfully created modules
-    """
-
     created_modules = []
 
     for i, module_name in enumerate(module_names):

@@ -52,8 +52,6 @@ def create_multiple_pages(
     created_pages= []
 
     for i, page_name in enumerate(page_names):
-        # Determine unlock date (use None if not provided)
-        #module_name['unlock_date'] = datetime.fromisoformat(module_name['unlock_date'])
 
         result = create_canvas_page(
             course_id, 
