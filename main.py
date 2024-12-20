@@ -13,7 +13,7 @@ from canvas_assignment_groups_creator import create_multiple_assignment_groups
 config = configparser.ConfigParser()
 
 # Read the configuration file
-config.read('/Users/ss/etc/config.ini')
+config.read('/etc/config.ini')
 
 # Retrieve settings
 COURSE_ID = config['canvas_data']['COURSE_ID']
