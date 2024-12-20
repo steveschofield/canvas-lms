@@ -1,6 +1,6 @@
 import requests
 import configparser
-from canvas_assignment_creator_test import create_multiple_assignments 
+from canvas_assignment_creator import create_multiple_assignments 
 import json
 
 # Create a config parser object
