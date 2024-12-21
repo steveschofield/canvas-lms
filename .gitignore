@@ -1,7 +1,6 @@
 .python-version
 .DS_Store
 config.ini
-datafiles/
 .vscode/
 
 # Byte-compiled / optimized / DLL files

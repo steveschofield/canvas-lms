@@ -1,0 +1,75 @@
+{
+    "title": "discussion_topics",
+    "DISCUSSION_TOPICS": [
+      {
+        "title": "Post Introduction",
+        "message": "<p>This is an asynchronous online class. One of the goals is to strive to build community and online friends through discussions. Let's get started by introducing yourself:</p>\n<ul>\n<li>Do you have Pets? (Feel free to post a picture(s))<br /><br /></li>\n<li><span>What are you expecting to get out of the class?<br /><br /></span></li>\n<li><span>How did you learn about cybersecurity?<br /><br /></span></li>\n</ul>\n<p>I encourage <em>everyone</em> to update their profile in Canvas. <strong>Click</strong> in the upper left corner labeled: <strong>Account</strong> icon (left), select <strong>Profile</strong> and edit to add an optional picture or a pic of your pet(s), short bio and link. For an example, see my profile under 'People' in this course.</p>\n<p><em>When you're done, click 'Next' to learn about me and ask questions.</em></p>",
+        "lock_at": "2025-01-26T23:59:00",
+        "due_at": "2025-01-26T23:59:00",
+        "unlock_at": "2025-01-11T23:59:00",
+        "published": true,
+        "pinned": true,
+        "points_possible":0
+      },
+      {
+        "title": "Water Cooler",
+        "message": "Ask Anything, non-discussion board related. Open discussions are encouraged, share interesting links",
+        "lock_at": "2025-05-02T23:59:00",
+        "due_at": "2025-05-02T23:59:00",
+        "unlock_at": "2025-01-11T23:59:00",
+        "published": true,
+        "pinned": true,
+        "points_possible":0
+      },
+      {
+        "title": "Module 1 Discussion Board",
+        "message": "Add any observations, thoughts and lessons learned",
+        "lock_at": "2025-02-02T23:59:00",
+        "due_at": "2025-02-02T23:59:00",
+        "unlock_at": "2025-01-20T00:00:00",
+        "published": true,
+        "pinned": false,
+        "points_possible":15
+      },
+      {
+        "title": "Module 2 Discussion Board",
+        "message": "Add any observations, thoughts and lessons learned",
+        "lock_at": "2025-02-16T23:59:00",
+        "due_at": "2025-02-16T23:59:00",
+        "unlock_at": "2025-02-03T00:00:00",
+        "published": true,
+        "pinned": false,
+        "points_possible":15
+      },
+      {
+        "title": "Module 3 Discussion Board",
+        "message": "Add any observations, thoughts and lessons learned",
+        "lock_at": "2025-03-02T23:59:00",
+        "due_at": "2025-03-02T23:59:00",
+        "unlock_at": "2025-02-17T00:00:00",
+        "published": true,
+        "pinned": false,
+        "points_possible":15
+      },
+      {
+        "title": "Module 4 Discussion Board",
+        "message": "Add any observations, thoughts and lessons learned",
+        "lock_at": "2025-03-16T23:59:00",
+        "due_at": "2025-03-16T23:59:00",
+        "unlock_at":"2025-03-03T00:00:00",
+        "published": true,
+        "pinned": false,
+        "points_possible":15
+      },
+      {
+        "title": "Module 5 Discussion Board",
+        "message": "Add any observations, thoughts and lessons learned",
+        "lock_at": "2025-04-06T23:59:00",
+        "due_at": "2025-04-06T23:59:00",
+        "unlock_at": "2025-03-17T00:00:00",
+        "published": true,
+        "pinned": false,
+        "points_possible":15
+      }
+    ]
+}

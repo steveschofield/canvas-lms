@@ -1,0 +1,25 @@
+{
+    "title": "assignment_groups",
+    "ASSIGNMENT_GROUPS": [
+      {
+        "name": "Practice Questions / PBQ (performance-based questions)",
+        "position": 2,
+        "group_weight": 35
+      },
+      {
+        "name": "Discussion Boards",
+        "position": 3,
+        "group_weight": 15
+      },
+      {
+        "name": "Assignment Delay",
+        "position": 4,
+        "group_weight": 5
+      },
+      {
+        "name": "Final Certification",
+        "position": 5,
+        "group_weight": 15
+      }
+    ]
+}
