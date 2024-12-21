@@ -19,7 +19,7 @@ config.read('/Users/ss/etc/config.ini')
 COURSE_ID = config['canvas_data']['COURSE_ID']
 API_TOKEN = config['canvas_data']['API_TOKEN']
 CANVAS_DOMAIN_URL = config['canvas_data']['CANVAS_DOMAIN_URL']
-MCC_CANVAS_DOMAIN = config['canvas_data']['MCC_CANVAS_DOMAIN']
+COLLEGE_CANVAS_DOMAIN = config['canvas_data']['COLLEGE_CANVAS_DOMAIN']
 
 def main():
 
@@ -38,7 +38,7 @@ def main():
         COURSE_ID,
         API_TOKEN,
         CANVAS_DOMAIN_URL,
-        MCC_CANVAS_DOMAIN,
+        COLLEGE_CANVAS_DOMAIN,
         MODULE_NAMES
     )
 
@@ -66,7 +66,7 @@ def main():
     discussion_board_test = create_discussion_boards(
         COURSE_ID, 
         API_TOKEN, 
-        MCC_CANVAS_DOMAIN,
+        COLLEGE_CANVAS_DOMAIN,
         DICUSSION_TOPICS
     )
    
