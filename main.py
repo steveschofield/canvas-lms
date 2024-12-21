@@ -38,6 +38,7 @@ def main():
         COURSE_ID,
         API_TOKEN,
         CANVAS_DOMAIN_URL,
+        MCC_CANVAS_DOMAIN,
         MODULE_NAMES
     )
 

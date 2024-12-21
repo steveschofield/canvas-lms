@@ -116,11 +116,9 @@ def create_canvas_module(
         module_id = data["id"]
         
         updateresults = update_module_publish_status(module_name,module_id,canvas_domain_url,course_id,access_token,unlock_date)
-        addtextheader1 = add_text_headers(course_id,access_token,"https://montcalm.instructure.com",module_id,"Chapter Homework",1)
-        addtextheader2 = add_text_headers(course_id,access_token,"https://montcalm.instructure.com",module_id,"Chapter Practice Questions / PBQ",2)
-
+    
         # Return the JSON response
-        return data
+        return module_id
     
     except requests.exceptions.RequestException as e:
         print(f"Error creating module {module_name}: {e}")
@@ -130,6 +128,7 @@ def create_multiple_modules(
     course_id, 
     access_token, 
     canvas_domain_url,
+    MCC_CANVAS_DOMAIN,
     module_names
 ):
     created_modules = []
@@ -138,19 +137,40 @@ def create_multiple_modules(
         # Determine unlock date (use None if not provided)
         module_name['unlock_date'] = datetime.fromisoformat(module_name['unlock_date'])
 
-        result = create_canvas_module(
+        module_id_result = create_canvas_module(
             course_id, 
             access_token, 
             canvas_domain_url,
             module_name['name'],
-            module_name['unlock_date']
+            module_name['unlock_date'],
         )
+
+        #add module item if true
+        if(module_name['addHomeworkSubHeader'] == True):
+            add_text_headers(
+                course_id,
+                access_token, 
+                MCC_CANVAS_DOMAIN,
+                module_id_result,
+                module_name['HomeworkSubHeaderText'],
+                1
+            )
         
-        if result:
+        #add module item if true
+        if(module_name['addQuizSubHeader'] == True):
+            add_text_headers(
+                course_id,
+                access_token, 
+                MCC_CANVAS_DOMAIN,
+                module_id_result,
+                module_name['QuizSubHeaderText'],
+                2
+            )
+        
+        if module_id_result:
             print("Module created successfully!")
-            print(f"Module ID: {result.get('id')}")
-            print(f"Module Name: {result.get('name')}")
-            created_modules.append(result)
+            print(f"Module ID:" + str(module_id_result))
+            created_modules.append(module_id_result)
         else:
             print(f"Failed to create module: {module_name}")
     
