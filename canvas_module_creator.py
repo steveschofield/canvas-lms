@@ -1,5 +1,8 @@
+from ast import mod
 import requests
 from datetime import datetime, timedelta
+from canvasapi import Canvas
+from canvasapi.exceptions import CanvasException
 
 def update_module_publish_status(
     module_name,
@@ -9,7 +12,6 @@ def update_module_publish_status(
     access_token,
     unlock_date
 ):
-    '''enter code here'''
       # Canvas API base URL
     try:
         base_url = f"https://{canvas_domain_url}/{course_id}/modules/" + str(module_id)
@@ -46,6 +48,38 @@ def update_module_publish_status(
         print(f"Error updating module: {e}")
         return None
 
+def add_text_headers(
+    course_id,
+    access_token,
+    canvas_domain_url,
+    module_id,
+    header_text,
+    position
+):
+    try:
+        # Initialize Canvas object
+        canvas = Canvas(canvas_domain_url, access_token)
+        
+        # Get the course
+        course = canvas.get_course(course_id)
+        
+        # Get the module using the module_id
+        module = course.get_module(module_id)
+        
+        # Add the text header to the module
+        module.create_module_item({
+            'type': 'SubHeader',
+            'title': header_text,
+            'position': position  # The position of the subheader in the module
+        })
+        print(f"Text header '{header_text}' added to module {module_id} successfully.")
+    
+    except CanvasException as e:
+        print(f"Failed to add text header: {e}")
+        return None  # Optionally return None or something else to signify failure
+
+
+    
 def create_canvas_module(
     course_id, 
     access_token, 
@@ -54,7 +88,6 @@ def create_canvas_module(
     unlock_date
 
 ):
-
     # Canvas API base URL
     base_url = f"https://{canvas_domain_url}/{course_id}/modules"
     
@@ -83,6 +116,8 @@ def create_canvas_module(
         module_id = data["id"]
         
         updateresults = update_module_publish_status(module_name,module_id,canvas_domain_url,course_id,access_token,unlock_date)
+        addtextheader1 = add_text_headers(course_id,access_token,"https://montcalm.instructure.com",module_id,"Chapter Homework",1)
+        addtextheader2 = add_text_headers(course_id,access_token,"https://montcalm.instructure.com",module_id,"Chapter Practice Questions / PBQ",2)
 
         # Return the JSON response
         return data

@@ -33,7 +33,6 @@ def main():
     ASSIGNMENTS = read_from_json("datafiles/CSTC240-assignment-data.json","ASSIGNMENTS")
     PAGES = read_from_json("datafiles/CSTC240-pages-data.json","PAGES")
     DICUSSION_TOPICS = "datafiles/CSTC240-discussion-topic-data.json"
-
     
     created_modules = create_multiple_modules(
         COURSE_ID,
