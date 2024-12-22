@@ -302,3 +302,5 @@ Publish each module items added from automation
 Add Assignments within each module
 
 Content in all Pages to fit whatever course is offered
+
+Other general formating within Modules with indents, Video placeholders.
