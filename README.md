@@ -295,8 +295,10 @@ Setup the outline mentioned above helps me determine the outline of the course
 
 Enable 35% percentage on Assignments Assignment Group
 
-Add Assignments within each module
+Add Orientation Pre-req to Module 1
 
 Publish each module items added from automation
 
-Content in all Pages
+Add Assignments within each module
+
+Content in all Pages to fit whatever course is offered
