@@ -13,7 +13,7 @@ from canvas_discussion_board import create_discussion_boards
 config = configparser.ConfigParser()
 
 # Read the configuration file
-config.read('/Users/ss/etc/config.ini')
+config.read('/etc/config.ini')
 
 # Retrieve settings
 COURSE_ID = config['canvas_data']['COURSE_ID']
