@@ -128,7 +128,7 @@ def create_multiple_modules(
     course_id, 
     access_token, 
     canvas_domain_url,
-    MCC_CANVAS_DOMAIN,
+    COLLEGE_CANVAS_DOMAIN,
     module_names
 ):
     created_modules = []
@@ -150,7 +150,7 @@ def create_multiple_modules(
             add_text_headers(
                 course_id,
                 access_token, 
-                MCC_CANVAS_DOMAIN,
+                COLLEGE_CANVAS_DOMAIN,
                 module_id_result,
                 module_name['HomeworkSubHeaderText'],
                 1
@@ -161,7 +161,7 @@ def create_multiple_modules(
             add_text_headers(
                 course_id,
                 access_token, 
-                MCC_CANVAS_DOMAIN,
+                COLLEGE_CANVAS_DOMAIN,
                 module_id_result,
                 module_name['QuizSubHeaderText'],
                 2

@@ -2,6 +2,8 @@ from canvasapi import Canvas
 from canvasapi.exceptions import CanvasException
 import configparser
 
+from main import COLLEGE_CANVAS_DOMAIN
+
 # Create a config parser object
 config = configparser.ConfigParser()
 
@@ -11,10 +13,10 @@ config.read('/Users/ss/etc/config.ini')
 # Retrieve settings
 COURSE_ID = config['canvas_data']['COURSE_ID']
 API_TOKEN = config['canvas_data']['API_TOKEN']
-MCC_CANVAS_DOMAIN = config['canvas_data']['MCC_CANVAS_DOMAIN']
+COLLEGE_CANVAS_DOMAIN = config['canvas_data']['COLLEGE_CANVAS_DOMAIN']
 
 # Initialize Canvas object
-canvas = Canvas(MCC_CANVAS_DOMAIN, API_TOKEN)
+canvas = Canvas(COLLEGE_CANVAS_DOMAIN, API_TOKEN)
 
 # Get the course
 try:
@@ -101,7 +103,7 @@ def delete_page(page):
     except CanvasException as e:
         print(f"Failed to delete page '{page.title}': {e}")
 try:
-    delete_assignments_in_group(MCC_CANVAS_DOMAIN, API_TOKEN, COURSE_ID)
+    delete_assignments_in_group(COLLEGE_CANVAS_DOMAIN, API_TOKEN, COURSE_ID)
 except CanvasException as e:
     print(f"Error fetching modules: {e}")
 
@@ -120,7 +122,7 @@ except CanvasException as e:
     print(f"Error fetching pages: {e}")
 
 try:
-    delete_groups_and_assignments(MCC_CANVAS_DOMAIN, API_TOKEN, COURSE_ID)
+    delete_groups_and_assignments(COLLEGE_CANVAS_DOMAIN, API_TOKEN, COURSE_ID)
 except CanvasException as e:
     print(f"Error deleting assignment groups and assignments: {e}")
 
