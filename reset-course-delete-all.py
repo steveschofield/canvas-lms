@@ -1,14 +1,13 @@
 from canvasapi import Canvas
 from canvasapi.exceptions import CanvasException
 import configparser
-
 from main import COLLEGE_CANVAS_DOMAIN
 
 # Create a config parser object
 config = configparser.ConfigParser()
 
 # Read the configuration file
-config.read('/Users/ss/etc/config.ini')
+config.read('/etc/config.ini')
 
 # Retrieve settings
 COURSE_ID = config['canvas_data']['COURSE_ID']

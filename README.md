@@ -51,8 +51,10 @@ This project automates the creation of common elements in Canvas courses offered
 
 Before running the scripts, ensure you have the following:
 
-1. An outline of how the course will be set up.
-2. Updated JSON files with the specific data for your course.
+1. Canvas LMS token provided under your profile and access to Canvas courses
+2. I'd recommend having a practice course to attempt, the COURSE_ID attribute is located in the config.ini
+3. An outline of how the course will be set up.
+4. Updated JSON files with the specific data for your course.
 
 ## Project Structure
 
@@ -286,3 +288,15 @@ For any questions or issues, please contact Steve Schofield.
 ---
 
 This documentation provides an overview of the project, configuration, JSON data files, installation, usage, license, and contribution guidelines.
+
+## MANUAL STEPS
+
+Setup the outline mentioned above helps me determine the outline of the course
+
+Enable 35% percentage on Assignments Assignment Group
+
+Add Assignments within each module
+
+Publish each module items added from automation
+
+Content in all Pages
