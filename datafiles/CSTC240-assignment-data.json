@@ -12,6 +12,26 @@
         "assignment_group_name": "Assignments"
       },
       {
+        "name": "Watch-Video-placeholder-introduction-to-course-video",
+        "points_possible": 5,
+        "due_at": "2025-01-19T23:59:00",
+        "lock_at": "2025-01-19T23:59:00",
+        "unlock_at": "2025-01-13T00:00:00",
+        "description": "This assignment covers my Introduction to the Course",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },
+      {
+        "name": "Watch-Video-placeholder-explaining-grading-layout-Module Layout / Grading",
+        "points_possible": 5,
+        "due_at": "2025-01-19T23:59:00",
+        "lock_at": "2025-01-19T23:59:00",
+        "unlock_at": "2025-01-13T00:00:00",
+        "description": "This assignment is a video covering grading methods and Module Layout",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },
+      {
         "name": "Lesson 1 Practice Questions",
         "points_possible": 5,
         "due_at": "2025-02-02T23:59:00",
