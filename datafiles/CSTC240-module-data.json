@@ -1,0 +1,85 @@
+{
+  "title": "module_names",
+  "MODULE_NAMES": [
+    {
+      "name": "FAQ / Videos",
+      "unlock_date": "2025-01-11 00:00:00.000000",
+      "addHomeworkSubHeader":false,
+      "HomeworkSubHeaderText":"",
+      "addQuizSubHeader":false,
+      "QuizSubHeaderText":""
+    },
+    {
+      "name": "Orientation",
+      "unlock_date": "2025-01-11 00:00:00.000000",
+      "addHomeworkSubHeader":false,
+      "HomeworkSubHeaderText":"",
+      "addQuizSubHeader":false,
+      "QuizSubHeaderText":""
+    },
+    {
+      "name": "Module 1 - Introduction to course material",
+      "unlock_date": "2025-01-11 00:00:00.000000",
+      "addHomeworkSubHeader":false,
+      "HomeworkSubHeaderText":"",
+      "addQuizSubHeader":false,
+      "QuizSubHeaderText":""
+    },
+    {
+      "name": "Module 2 - Understanding Cloud Computing Concepts",
+      "unlock_date": "2025-01-27 00:00:00.000000",
+      "addHomeworkSubHeader":true,
+      "HomeworkSubHeaderText":"Lesson Homework",
+      "addQuizSubHeader":true,
+      "QuizSubHeaderText":"Lesson Practice Questions / PBQ"
+    },
+    {
+      "name": "Module 3 - Applying Cloud Business Principles",
+      "unlock_date": "2025-02-10 00:00:00.000000",
+      "addHomeworkSubHeader":true,
+      "HomeworkSubHeaderText":"Lesson Homework",
+      "addQuizSubHeader":true,
+      "QuizSubHeaderText":"Lesson Practice Questions / PBQ"
+    },
+    {
+      "name": "Module 4 - Advising a Cloud Design and Migration",
+      "unlock_date": "2025-02-24 00:00:00.000000",
+      "addHomeworkSubHeader":true,
+      "HomeworkSubHeaderText":"Lesson Homework",
+      "addQuizSubHeader":true,
+      "QuizSubHeaderText":"Lesson Practice Questions / PBQ"
+    },
+    {
+      "name": "Module 5 - Operating in the Cloud",
+      "unlock_date": "2025-03-10 00:00:00.000000",
+      "addHomeworkSubHeader":true,
+      "HomeworkSubHeaderText":"Lesson Homework",
+      "addQuizSubHeader":true,
+      "QuizSubHeaderText":"Lesson Practice Questions / PBQ"
+    },
+    {
+      "name": "Module 6 - Managing Cloud Governance",
+      "unlock_date": "2025-03-31 00:00:00.000000",
+      "addHomeworkSubHeader":true,
+      "HomeworkSubHeaderText":"Lesson Homework",
+      "addQuizSubHeader":true,
+      "QuizSubHeaderText":"Lesson Practice Questions / PBQ"
+    },
+    {
+      "name": "Module 7 - Practice Exam / Assessment",
+      "unlock_date": "2025-04-14 00:00:00.000000",
+      "addHomeworkSubHeader":false,
+      "HomeworkSubHeaderText":"",
+      "addQuizSubHeader":false,
+      "QuizSubHeaderText":""
+    },
+    {
+      "name": "Module 8 - Final Certification Exam",
+      "unlock_date": "2025-04-21 00:00:00.000000",
+      "addHomeworkSubHeader":false,
+      "HomeworkSubHeaderText":"",
+      "addQuizSubHeader":false,
+      "QuizSubHeaderText":""
+    }
+  ]
+}

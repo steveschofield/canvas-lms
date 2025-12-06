@@ -1,0 +1,224 @@
+{
+    "title": "assignments",
+    "ASSIGNMENTS": [
+      {
+        "name": "Orientation",
+        "points_possible": 5,
+        "due_at": "2025-01-26T23:59:00",
+        "lock_at": "2025-01-26T23:59:00",
+        "unlock_at": "2025-01-11T00:00:00",
+        "description": "This assignment has two components, 1) Post an introduction of yourself 2) Watch Introduction video by instructor.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },
+      {
+        "name": "Watch-Video-placeholder-introduction-to-course-video",
+        "points_possible": 5,
+        "due_at": "2025-01-19T23:59:00",
+        "lock_at": "2025-01-19T23:59:00",
+        "unlock_at": "2025-01-13T00:00:00",
+        "description": "This assignment covers my Introduction to the Course",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },
+      {
+        "name": "Watch-Video-placeholder-explaining-grading-layout-Module Layout / Grading",
+        "points_possible": 5,
+        "due_at": "2025-01-19T23:59:00",
+        "lock_at": "2025-01-19T23:59:00",
+        "unlock_at": "2025-01-13T00:00:00",
+        "description": "This assignment is a video covering grading methods and Module Layout",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },
+      {
+        "name": "Lesson 1 Practice Questions",
+        "points_possible": 5,
+        "due_at": "2025-02-02T23:59:00",
+        "lock_at": "2025-02-02T23:59:00",
+        "unlock_at": "2025-01-20T00:00:00",
+        "description": "Placeholder assignment for Lesson 1 Practice Questions.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Practice Questions / PBQ (performance-based questions)"
+      },
+      {
+        "name": "Lesson 2 Practice Questions",
+        "points_possible": 5,
+        "due_at": "2025-02-16T23:59:00",
+        "lock_at": "2025-02-16T23:59:00",
+        "unlock_at": "2025-02-03T00:00:00",
+        "description": "Placeholder assignment for Lesson 2 Practice Questions.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Practice Questions / PBQ (performance-based questions)"
+      },
+      {
+        "name": "Lesson 3 Practice Questions",
+        "points_possible": 5,
+        "due_at": "2025-03-02T23:59:00",
+        "lock_at": "2025-03-02T23:59:00",
+        "unlock_at": "2025-02-17T00:00:00",
+        "description": "Placeholder assignment for Lesson 3 Practice Questions.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Practice Questions / PBQ (performance-based questions)"
+      },
+      {
+        "name": "Lesson 4 Practice Questions",
+        "points_possible": 5,
+        "due_at": "2025-03-16T23:59:00",
+        "lock_at": "2025-03-16T23:59:00",
+        "unlock_at": "2025-03-03T00:00:00",
+        "description": "Placeholder assignment for Lesson 4 Practice Questions.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Practice Questions / PBQ (performance-based questions)"
+      },
+      {
+        "name": "Lesson 5 Practice Questions",
+        "points_possible": 5,
+        "due_at": "2025-04-06T23:59:00",
+        "lock_at": "2025-04-06T23:59:00",
+        "unlock_at": "2025-03-17T00:00:00",
+        "description": "Placeholder assignment for Lesson 5 Practice Questions.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Practice Questions / PBQ (performance-based questions)"
+      },
+      {
+        "name": "Lesson 1 PBQ (Performance Based Question)",
+        "points_possible": 5,
+        "due_at": "2025-02-02T23:59:00",
+        "lock_at": "2025-02-02T23:59:00",
+        "unlock_at": "2025-01-20T00:00:00",
+        "description": "Placeholder assignment for Lesson 1 PBQ (Performance Based Question).  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Practice Questions / PBQ (performance-based questions)"
+      },
+      {
+        "name": "Lesson 2 PBQ (Performance Based Question)",
+        "points_possible": 5,
+        "due_at": "2025-02-16T23:59:00",
+        "lock_at": "2025-02-16T23:59:00",
+        "unlock_at": "2025-02-03T00:00:00",
+        "description": "Placeholder assignment for Lesson 2 PBQ (Performance Based Question).  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Practice Questions / PBQ (performance-based questions)"
+      },
+      {
+        "name": "Lesson 3 PBQ (Performance Based Question)",
+        "points_possible": 5,
+        "due_at": "2025-03-02T23:59:00",
+        "lock_at": "2025-03-02T23:59:00",
+        "unlock_at": "2025-02-17T00:00:00",
+        "description": "Placeholder assignment for Lesson 3 PBQ (Performance Based Question).  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Practice Questions / PBQ (performance-based questions)"
+      },
+      {
+        "name": "Lesson 4 PBQ (Performance Based Question)",
+        "points_possible": 5,
+        "due_at": "2025-03-16T23:59:00",
+        "lock_at": "2025-03-16T23:59:00",
+        "unlock_at": "2025-03-03T00:00:00",
+        "description": "Placeholder assignment for Lesson 4 PBQ (Performance Based Question).  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Practice Questions / PBQ (performance-based questions)"
+      },
+      {
+        "name": "Lesson 5 PBQ (Performance Based Question)",
+        "points_possible": 5,
+        "due_at": "2025-04-06T23:59:00",
+        "lock_at": "2025-04-06T23:59:00",
+        "unlock_at": "2025-03-17T00:00:00",
+        "description": "Placeholder assignment for Lesson 5 PBQ (Performance Based Question).  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Practice Questions / PBQ (performance-based questions)"
+      },
+      {
+        "name": "Lesson 1 - Topics, Review Activities, Labs, Flashcards",
+        "points_possible": 5,
+        "due_at": "2025-02-02T23:59:00",
+        "lock_at": "2025-02-02T23:59:00",
+        "unlock_at": "2025-01-20T00:00:00",
+        "description": "Placeholder assignment for Lesson 1 activites.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },
+      {
+        "name": "Lesson 2 - Topics, Review Activities, Labs, Flashcards",
+        "points_possible": 5,
+        "due_at": "2025-02-16T23:59:00",
+        "lock_at": "2025-02-16T23:59:00",
+        "unlock_at": "2025-02-03T00:00:00",
+        "description": "Placeholder assignment for Lesson 2 activites.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },
+      {
+        "name": "Lesson 3 - Topics, Review Activities, Labs, Flashcards",
+        "points_possible": 5,
+        "due_at": "2025-03-02T23:59:00",
+        "lock_at": "2025-03-02T23:59:00",
+        "unlock_at": "2025-02-17T00:00:00",
+        "description": "Placeholder assignment for Lesson 3 activites.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },{
+        "name": "Lesson 4 - Topics, Review Activities, Labs, Flashcards",
+        "points_possible": 5,
+        "due_at": "2025-03-16T23:59:00",
+        "lock_at": "2025-03-16T23:59:00",
+        "unlock_at": "2025-03-03T00:00:00",
+        "description": "Placeholder assignment for Lesson 4 activites.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },
+      {
+        "name": "Lesson 5 - Topics, Review Activities, Labs, Flashcards",
+        "points_possible": 5,
+        "due_at": "2025-04-06T23:59:00",
+        "lock_at": "2025-04-06T23:59:00",
+        "unlock_at": "2025-03-17T00:00:00",
+        "description": "Placeholder assignment for Lesson 5 activites.  This is used for grading only and no integration between Certmaster and Canvas.",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },
+      {
+        "name": "Practice Exam preparing for Final Certification",
+        "points_possible": 5,
+        "due_at": "2025-04-06T23:59:00",
+        "lock_at": "2025-04-06T23:59:00",
+        "unlock_at": "2025-03-17T00:00:00",
+        "description": "Placeholder for Practice Exam for Final Certification.",
+        "published": true,
+        "assignment_group_name": "Assignments"
+      },
+      {
+        "name": "AD Pass 1",
+        "points_possible": 5,
+        "due_at": "2025-05-02T23:59:00",
+        "lock_at": "2025-05-02T23:59:00",
+        "unlock_at": "2025-01-13T00:00:00",
+        "description": "Use to extend assignment by one week.  Let me know.  More information listed in Simple Syllabus",
+        "published": true,
+        "assignment_group_name": "Assignment Delay"
+      },
+      {
+        "name": "AD Pass 2",
+        "points_possible": 5,
+        "due_at": "2025-05-02T23:59:00",
+        "lock_at": "2025-05-02T23:59:00",
+        "unlock_at": "2025-01-13T00:00:00",
+        "description": "Use to extend assignment by one week.  Let me know.  More information listed in Simple Syllabus",
+        "published": true,
+        "assignment_group_name": "Assignment Delay"
+      },
+      {
+        "name": "Final Certification",
+        "points_possible": 5,
+        "due_at": "2025-05-02T23:59:00",
+        "lock_at": "2025-05-02T23:59:00",
+        "unlock_at": "2025-04-21T00:00:00",
+        "description": "Placeholder for Final Exam.  You will receive the voucher per MCC policy at appropriate time.  Check the Simple Syllabus for when to schedule your Final Exam. The practice exam will also be required before taking Final",
+        "published": true,
+        "assignment_group_name": "Final Certification"
+      }
+    ]
+}
