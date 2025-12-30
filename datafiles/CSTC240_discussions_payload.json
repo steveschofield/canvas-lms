@@ -1,0 +1,32 @@
+[
+  {
+    "module": 1,
+    "discussion_title": "Module 1 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Cloud service models: if you had to explain SaaS vs PaaS vs IaaS to a non‑technical manager in 30 seconds, what’s your best real‑life example for each?</li>\n  <li>Deployment models: public, private, hybrid, community—what’s one scenario where hybrid is the right answer, and one where it’s just a messy compromise?</li>\n  <li>Shared Responsibility Model: what’s one security control you *always* want the cloud provider to own, and what’s one you refuse to “assume they’ve got it” (you verify yourself)?</li>\n  <li>Networking: when someone says “remote access,” what’s the first risk that pops in your head, and how would you reduce it without killing productivity?</li>\n  <li>Storage + CDN: what’s the difference between “where data lives” and “how fast users can get it,” and why do people mix those up in cloud conversations?</li>\n  <li>What one thing did you learn that was cool and share with your family, friends and what was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 1 Discussion Board"
+  },
+  {
+    "module": 2,
+    "discussion_title": "Module 2 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Vendor relationships: what’s one question you’d ask a cloud vendor that instantly tells you if they’re legit or just marketing fluff?</li>\n  <li>Professional services vs DIY: when is it worth paying for vendor professional services, and when do you keep it in‑house (and why)?</li>\n  <li>Open‑source vs proprietary cloud services: what’s the tradeoff you care about most—cost, lock‑in, talent availability, support, or something else?</li>\n  <li>Fixed vs variable costs: what’s one cloud cost surprise companies run into, and how do you prevent it before it hits the bill?</li>\n  <li>Chargebacks + tagging: what’s a tagging strategy that actually works in the real world (and doesn’t turn into a mess in 90 days)?</li>\n  <li>What one thing did you learn that was cool and share with your family, friends and what was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 2 Discussion Board"
+  },
+  {
+    "module": 3,
+    "discussion_title": "Module 3 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Stakeholders: who *has* to be at the table for cloud design decisions, and what goes sideways when they’re not included?</li>\n  <li>Gap analysis: what’s one “hidden” gap you’d look for before migrating (skills, licensing, network, security, process), and how would you surface it early?</li>\n  <li>Resilience: redundancy vs disaster mitigation—what’s the difference in plain English, and which one do orgs usually underfund?</li>\n  <li>Proof of Concept vs Proof of Value: which one do you think is more useful for leadership, and what would you measure to prove it?</li>\n  <li>Migration strategies (“the seven types” / 6R-ish): when do you rehost vs refactor vs retire? Pick one and defend it with a practical example.</li>\n  <li>What one thing did you learn that was cool and share with your family, friends and what was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 3 Discussion Board"
+  },
+  {
+    "module": 4,
+    "discussion_title": "Module 4 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>AI in the cloud: where do you think orgs get the *most* value from AI services right now—customer support, analytics, security, or something else?</li>\n  <li>Disposable resources: why is “treat servers like cattle, not pets” a security win (and also a risk if you do it sloppy)?</li>\n  <li>Monitoring utilization: what’s one metric you’d watch first to spot wasted spend *and* one metric you’d watch first to spot performance pain?</li>\n  <li>DevOps + CI/CD: what’s the biggest security mistake teams make when they move fast with pipelines, and how do you fix it without slowing everything down?</li>\n  <li>Cloud security: what’s one common failure point—data security, app/infrastructure security, network connections, DNS—and how would you explain it to a business owner?</li>\n  <li>What one thing did you learn that was cool and share with your family, friends and what was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 4 Discussion Board"
+  },
+  {
+    "module": 5,
+    "discussion_title": "Module 5 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Risk assessment: when moving to cloud, what risk do you think gets underestimated the most—misconfigurations, identity sprawl, data exposure, vendor outage, or compliance drift?</li>\n  <li>Risk register: what makes a risk register actually useful (not just a compliance checkbox)?</li>\n  <li>Risk response: accept, avoid, transfer, mitigate—pick one risk and walk through which response you’d choose and why.</li>\n  <li>Compliance + standards: what’s one compliance requirement that becomes *harder* in the cloud, and what’s one that becomes easier?</li>\n  <li>Change management: what does “good cloud change control” look like when environments are moving fast?</li>\n  <li>What one thing did you learn that was cool and share with your family, friends and what was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 5 Discussion Board"
+  }
+]

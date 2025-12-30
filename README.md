@@ -15,6 +15,14 @@ Before running the scripts, there is prep work required to help organize data in
 1. Create an outline of how the course will be setup.
 2. Update each JSON file with the specific data.
 
+## Late policy automation
+
+Run `python update_late_policy.py` to enable the Canvas late policy that automatically applies a 0% grade to missing submissions (i.e., full deduction). Configure `/Users/ss/etc/config.txt` with your course ID, API token, and Canvas domain before running it. Adjust `GRADE_FOR_MISSING_PERCENT` in `update_late_policy.py` if you want a different default.
+
+## Per-assignment posting policy
+
+Run `python update_assignment_gradebook_settings.py <assignment_id>` to switch an assignment to manual posting (grades/late/missing visibility stay hidden until posted). Add `--auto` to revert to automatic posting. Uses config at `/Users/ss/etc/config.txt`.
+
 Here is a sample used for Cloud Essentials+, which is offered by CompTIA
 
 | **Week**    | **Start Date**                           | **End Date**                   | **Chapter Covered**                                 | **Assignments**                                                                                                                                                                                           |

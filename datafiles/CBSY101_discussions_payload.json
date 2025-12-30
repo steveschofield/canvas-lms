@@ -1,0 +1,62 @@
+[
+  {
+    "module": 1,
+    "discussion_title": "Module 1 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Where do you personally draw the line between “authorized testing” and “hacking,” and what’s your go-to way to prove you’re operating with permission (scope + authorization)?</li>\n  <li>You’re writing notes as you go. What’s the *minimum* documentation you think is non‑negotiable during a pentest so you can defend your actions later (and still be useful to the client)?</li>\n  <li>Pick one framework/methodology (OSSTMM, PTES, MITRE ATT&CK, OWASP Top 10, etc.). When would you *actually* use it on a real engagement, and when is it overkill?</li>\n  <li>Scripting time: Bash vs Python vs PowerShell—what’s your default pick for automating pentest tasks, and why?</li>\n  <li>Think about reporting: what’s one thing that makes a pentest report *actually* valuable to a business (not just a list of findings)?</li>\n  <li>What was one cool thing you learned and shared with your family member? What was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 1 Discussion Board"
+  },
+  {
+    "module": 2,
+    "discussion_title": "Module 2 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Scope creep happens fast. What’s one “nice try” request a client might slip in that you would push back on because it’s outside the rules of engagement?</li>\n  <li>Web/app vs network vs mobile vs cloud vs wireless—pick one assessment type you’ve seen (or can imagine) being done badly. What went wrong, and how would you fix it?</li>\n  <li>Target selection: would you rather test a few high‑value assets deeply, or many assets lightly? Defend your choice for a real client.</li>\n  <li>Shared responsibility model: in a cloud engagement, what’s the #1 thing you expect the *provider* to handle vs the #1 thing that’s on the *customer*?</li>\n  <li>Legal/ethical reality check: what’s one risk to the tester (professional, legal, or technical) that people underestimate in pre‑engagement?</li>\n  <li>What was one cool thing you learned and shared with your family member? What was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 2 Discussion Board"
+  },
+  {
+    "module": 3,
+    "discussion_title": "Module 3 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Active vs passive recon: where do you start and why? Bonus: what’s the first “don’t do this” mistake new testers make during recon?</li>\n  <li>OSINT: what’s one piece of info you could realistically pull from public sources that would seriously change an attack plan?</li>\n  <li>Shodan and CT logs are powerful. What’s a responsible way to use them without crossing the line into “this looks like targeting”?</li>\n  <li>Nmap: what’s your favorite thing to validate manually after a scan, and why don’t you trust scan output blindly?</li>\n  <li>Enumeration write‑ups: what’s your system for documenting recon/enum so you can hand it to someone else and they can continue the engagement?</li>\n  <li>What was one cool thing you learned and shared with your family member? What was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 3 Discussion Board"
+  },
+  {
+    "module": 4,
+    "discussion_title": "Module 4 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Vulnerability discovery: do you prefer “broad scans first” or “tight scope and go deep”? Explain your workflow and why.</li>\n  <li>Secrets scanning (repos, configs, containers): where do you most often expect secrets to show up, and what’s the *least* painful way to remediate them?</li>\n  <li>Wireless scanning: what’s one signal that makes you suspect a rogue access point or hidden network situation?</li>\n  <li>Validation matters: how would you confirm a vuln finding is real *without* accidentally causing an outage?</li>\n  <li>Physical security: pick one (tailgating, USB drops, badge cloning, lock picking). In the real world, what makes it effective—and what makes it likely to fail?</li>\n  <li>What was one cool thing you learned and shared with your family member? What was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 4 Discussion Board"
+  },
+  {
+    "module": 5,
+    "discussion_title": "Module 5 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Target prioritization: what signals tell you “this system is worth the time” (high‑value asset, EOL software, default configs, etc.)?</li>\n  <li>Exploit selection: when do you use a public exploit as‑is, and when do you customize (or write your own) because the situation demands it?</li>\n  <li>Scope limitations: what’s a scenario where *not* exploiting something is the correct decision, even if you know you can?</li>\n  <li>Automation: what’s one task you’d automate with a quick script during an engagement (PowerShell/Bash/Python), and what would you keep manual on purpose?</li>\n  <li>What’s one technique or tool you’d actually use again, and why?</li>\n  <li>What was one cool thing you learned and shared with your family member? What was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 5 Discussion Board"
+  },
+  {
+    "module": 6,
+    "discussion_title": "Module 6 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Web attacks: pick one (IDOR, session hijacking, injection, file inclusion, etc.). What’s the easiest way teams accidentally introduce it?</li>\n  <li>Brute force vs credential stuffing vs password spraying—how do you decide which is “fair game” in a pentest and which is too disruptive?</li>\n  <li>JWT manipulation: what’s one common misunderstanding developers have about JWTs that leads to a security problem?</li>\n  <li>Cloud attacks: which misconfiguration do you think is the most common in real environments (IAM, resource misconfig, logging exposure, metadata service, etc.) and why?</li>\n  <li>Supply chain / image artifact tampering: what’s a practical control you’d recommend that a normal org can actually implement?</li>\n  <li>What was one cool thing you learned and shared with your family member? What was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 6 Discussion Board"
+  },
+  {
+    "module": 7,
+    "discussion_title": "Module 7 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Network attacks: what’s one misconfiguration (default creds, misconfigured services, VLAN hopping, relay, etc.) you’d look for early because it pays off fast?</li>\n  <li>On‑path (AiTM) attacks: what’s the real-world prerequisite that makes these work, and what’s the simplest defense you’d tell a client to start with?</li>\n  <li>Authentication attacks: what’s the difference between pass‑the‑hash, pass‑the‑ticket, and pass‑the‑token in terms of *what you’re abusing*?</li>\n  <li>MFA fatigue: why does it work on humans, and how would you fix the process without making everyone hate security?</li>\n  <li>Host-based attacks: privilege escalation—what’s your “most likely” path: misconfig endpoints, unquoted service paths, LOLBins, or something else? Explain.</li>\n  <li>What was one cool thing you learned and shared with your family member? What was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 7 Discussion Board"
+  },
+  {
+    "module": 8,
+    "discussion_title": "Module 8 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Wireless: evil twin vs deauth vs captive portal—pick one and explain why it’s so effective *even when the tech is solid*.</li>\n  <li>Wardriving: what’s the ethical boundary here? What data would you collect, and what would you refuse to collect?</li>\n  <li>Social engineering: phishing vs spear phishing vs whaling vs smishing—what makes one “higher risk” for an org?</li>\n  <li>Specialized systems: OT/ICS—why is pentesting OT different from IT, and what’s the #1 rule you’d follow to avoid causing damage?</li>\n  <li>AI attacks: what kind of “AI attack” do you think is most realistic right now (prompt injection, data poisoning, model theft, etc.) and why?</li>\n  <li>What was one cool thing you learned and shared with your family member? What was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 8 Discussion Board"
+  },
+  {
+    "module": 9,
+    "discussion_title": "Module 9 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Persistence: which technique do you think is most common in the wild (scheduled tasks, services, new accounts, registry keys, browser extensions, etc.) and why?</li>\n  <li>C2 frameworks: what’s the value of a C2 in a controlled pentest, and what’s the line you don’t cross to keep it ethical/safe?</li>\n  <li>Lateral movement: pivoting—explain it like you’re teaching a new teammate. What’s your first move after you get a foothold?</li>\n  <li>Staging/exfil: what’s one “quiet” way data gets moved out that defenders miss (ADS, stego, chunking, etc.)?</li>\n  <li>Cleanup: what does *good* cleanup look like? What artifacts do you make sure are gone, and what do you leave documented for the client?</li>\n  <li>What was one cool thing you learned and shared with your family member? What was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 9 Discussion Board"
+  },
+  {
+    "module": 10,
+    "discussion_title": "Module 10 Discussion Board",
+    "message_html": "<p><strong>Add any observations, thoughts, and lessons learned.</strong></p>\n<hr>\n<ol>\n  <li>Reports: what’s the difference between a report that gets ignored and a report that actually gets actioned?</li>\n  <li>Risk scoring: what’s your take—CVSS only, business impact first, or a hybrid? How would you explain severity to a non-technical stakeholder?</li>\n  <li>Limitations/assumptions: what’s one limitation you would always call out so nobody misreads the results?</li>\n  <li>Recommendations: pick one control category (technical, admin, operational, physical). What’s a recommendation that’s high impact and realistic to implement?</li>\n  <li>Stakeholder reality: if leadership only funds *one* fix from your report, how do you decide which fix you’d fight for?</li>\n  <li>What was one cool thing you learned and shared with your family member? What was their reaction?</li>\n</ol>\n",
+    "search_term": "Module 10 Discussion Board"
+  }
+]

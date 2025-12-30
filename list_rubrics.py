@@ -13,7 +13,7 @@ import configparser
 import requests
 from typing import Dict, List
 
-CONFIG_PATH = "etc/config.txt"
+CONFIG_PATH = "/Users/ss/etc/config.txt"
 CONFIG_SECTION = "canvas-lms-test"
 
 config = configparser.ConfigParser()

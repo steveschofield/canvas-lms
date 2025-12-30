@@ -1,0 +1,18 @@
+# 1) Set env vars (token + base URL)
+export CANVAS_TOKEN="1435~ZA6rEw4FrcUYEWcmyczFZnufwaa2A6eGM8khzLuA72wm88zyAWXzDCcyuZc2ZeYu"
+export CANVAS_BASE_URL="https://montcalm.instructure.com"
+
+# 2) (Optional) sanity check / preview a single module update (no API call)
+python3 update_one_discussion.py --course-id 16888 --module 1 --payload pentest_discussions_payload.json --dry-run
+
+# 3) Update ONE discussion board at a time (recommended)
+#    This searches by the exact discussion title from the payload, e.g., "Module 1 Discussion Board"
+python3 update_one_discussion.py --course-id 12345 --module 1 --payload pentest_discussions_payload.json
+python3 update_one_discussion.py --course-id 12345 --module 2 --payload pentest_discussions_payload.json
+python3 update_one_discussion.py --course-id 12345 --module 3 --payload pentest_discussions_payload.json
+
+# 4) If your titles don’t match exactly, override the title on the command line:
+python3 update_one_discussion.py --course-id 12345 --module 1 --title "Module 1 Discussion Board" --payload pentest_discussions_payload.json
+
+# 5) If you already know the Canvas topic_id, skip search and update directly:
+python3 update_one_discussion.py --course-id 12345 --module 1 --topic-id 987654 --payload pentest_discussions_payload.json
